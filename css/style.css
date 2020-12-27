@@ -52,6 +52,14 @@ body {
   display: flex;
   background: #F1E4E6;
 }
+.main__head:hover {
+  -webkit-filter: brightness(50%);
+  filter: brightness(0.5);
+}
+.fetured-item__img:hover {
+  /*-webkit-filter: brightness(50%);*/
+  filter: brightness(0.4);
+}
 .main__content {
   width: 100%;
   padding: 335px 0 0 64px;
@@ -192,13 +200,20 @@ body {
   display: flex;
   justify-content: center;
 }
-.browse button {
+.browse .browse__button {
   height: 47px;
   width: 211px;
+  background-color: white;
   border: 1px solid #FF6A6A;
 }
-.browse button a {
+.browse .browse__button a {
   color: #FF6A6A;
+}
+.browse__button:hover {
+  background-color: #F16D7F;
+}
+.button__text:hover {
+  color: white;
 }
 .feature {
   width: 1140px;
