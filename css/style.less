@@ -4,6 +4,9 @@
     width: @width-all;
     margin: 0 auto;
 }
+button {
+    border: none;
+}
 a { 
     text-decoration: none; 
    } 
@@ -318,6 +321,7 @@ body {
             height: 55px;
             width: 100px;
             border: 0;
+            color: white;
             background-color: #F16D7F;;
         }
         .form-control{
@@ -483,4 +487,90 @@ body {
 }
 .form__check {
     display: flex;
+}
+/* страница регистрации */
+.registration__head {
+    .margin;
+    height: 148px;
+    display: flex;
+    align-items: center;
+    background-color: #F8F3F4;
+}
+.registration__title {
+    padding-left: 230px
+}
+.registration {
+    .margin;
+    margin-top: 64px;
+    margin-bottom: 112px;
+    display: flex;
+}
+.registration__form {
+    width: 25%;
+    padding-left: 230px;
+    padding-right: 120px;
+}
+.registration__form-group, .registration__form-group-2 {
+    .registration__label {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+    .form-control {
+        width: 360px;
+        height: 50px;
+        margin:20px 0 20px 0;
+    }
+}
+
+.registration__form-group-2  {
+    .btn {
+        width: 167px;
+    height: 50px;
+    color: white;
+    background-color:  #F16D7F;
+    }
+    .form-group-2__reminder {
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0em;
+        padding-bottom: 63px;
+
+    }
+}
+.registration__loyalty {
+    width: 46%;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.loyalty__list {
+    padding-left: 40px;
+    list-style-image:url(../img/vector-list.svg)
+}
+.loyalty__text {
+    padding-top: 22px;
+}
+.loyalty__item {
+    padding-top: 16px;
+}
+.form-check__label {
+    font-family: Lato;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
