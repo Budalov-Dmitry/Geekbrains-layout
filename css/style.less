@@ -14,6 +14,17 @@ body {
     font-weight: 400;
     line-height: 36px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+
+}
 .padding{
     padding-left: 230px;
     padding-right: 230px;
@@ -138,7 +149,7 @@ body {
     .margin;
     height: 204px;
     text-align: center;
-    h1{
+    h2{
         font-family: Lato;
         font-style: normal;
         font-weight: normal;
@@ -171,7 +182,7 @@ body {
     a{
         background-color: #F1E4E6
     }
-    h1{
+    .fetured-item__title {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -180,23 +191,24 @@ body {
     color: #000000;
     padding: 12px;
     }
-    span{
+    .fetured-item__text{
         font-family: Lato;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
         color: #5D5D5D;
-
+        padding: 12px;
 
     }
-    p{
+    .fetured-item__price{
         font-family: Lato;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
         color: #F16D7F;
+        padding: 12px;
     }
 }
 .browse{
@@ -204,19 +216,17 @@ body {
     height: 101px;
     display: flex;
     justify-content: center;
-    .browse__button{
+    .browse__button {
         height: 47px;
         width: 211px;
         background-color: white;
         border: 1px solid #FF6A6A;
-        a{
-          color: #FF6A6A;  
-        }
+        color: #FF6A6A;
     }
 }
-.browse__button:hover{
+.browse__button:hover {
     background-color: #F16D7F;
-    
+    color: white;
 }
 .button__text:hover{
     color: white;
@@ -232,11 +242,14 @@ body {
     .feature__box{
         display: flex;
         align-items: center;
-        flex-direction: column;
         padding-top: 102px;
         padding-bottom: 102px;
     }
-    h1{
+    .feture-box__item-1 {
+        
+        padding-left: 170px;
+    }
+    .feture-box__item-2{
         text-align: center;
         font-family: Lato;
         font-style: normal;
@@ -246,7 +259,7 @@ body {
         color: #FBFBFB;
         padding-top: 20px;
     }
-    p{
+    .feture-box__item-3{
         font-family: Lato;
         font-style: normal;
         font-weight: 300;
@@ -279,27 +292,28 @@ body {
             color: #222224;
         }
     }
-    .subscribe__form-group{
+    .subscribe__form-group {
         width: @width-all/3;
-        label 
-            p{
-                font-size: 18px;
-            }
-            h1{
-                font-family: Lato;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 167.2%;
-                text-align: center;
-                color: #222224;
+        .form-group__title {
+            font-size: 18px;
+            text-align: center;
+            padding-left: 100px ;
         }
-        .form-inline{
+        .form-group-title__item-2 {   
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 167.2%;
+            text-align: center;
+            color: #222224;
+        }    
+        .form-inline {
             display: flex;
             flex-direction: row;
             padding-left: 95px;
         }
-        .btn{
+        .btn {
             border-radius: 0px 40px 40px 0px;
             height: 55px;
             width: 100px;
@@ -372,20 +386,23 @@ body {
 }
 .filter{
     .margin;
+    height: 120px;
     display: flex;
     justify-content: space-around;
 }
 .filter__search{
     width: 150px;
+    
 }
 .filter__list{
     position: relative;
+    
 }
 .filter__title::before{
     position: absolute;
     content: '';
     width: 5px;
-    height: 37px;
+    height: 30px;
     background-color: #F16D7F;
     left: -11px;
 }    
@@ -393,6 +410,9 @@ body {
     display: flex;
     justify-content: space-between;
     
+}
+.filter__container,.filter__conditions{
+    padding-top: 50px;
 }
 .conditions__form{
     padding-left: 28px;
@@ -404,7 +424,7 @@ body {
     letter-spacing: 0em;
     text-align: left;
 }
-.filter__title{
+.filter__head{
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
@@ -413,6 +433,28 @@ body {
     letter-spacing: 0em;
     text-align: left;
 
+}
+.filter__title{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform:uppercase;
+    color: #EF5B70;
+    padding: 15px 0 15px 0 ;
+ 
+}
+.filter__item{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 .catalog__pagination{
     .margin;
@@ -438,4 +480,7 @@ body {
 }
 .pagination__link-active{
     color: #EF5B70;
+}
+.form__check {
+    display: flex;
 }
