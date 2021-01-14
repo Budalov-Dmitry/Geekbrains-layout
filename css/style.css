@@ -89,23 +89,6 @@ body {
   background-color: #F16D7F;
   left: -12px;
 }
-.sale__list-item4 {
-  width: 100%;
-  margin-top: 30px;
-  background-image: url(../img/LUXIROUS.jpg);
-}
-.sale__list-item4 a {
-  margin-left: 387px;
-}
-.sale__list-item1 {
-  background-image: url(../img/stock-women.jpg);
-}
-.sale__list-item2 {
-  background-image: url(../img/stock-men.jpg);
-}
-.sale__list-item3 {
-  background-image: url(../img/stock-kids.jpg);
-}
 .main__sale {
   width: 1600px;
   margin: 0 auto;
@@ -121,26 +104,48 @@ body {
   width: 360px;
   height: 260px;
 }
+.main__sale .sale__list .sale__list-item {
+  display: flex;
+  justify-content: center;
+}
 .main__sale .sale__list .sale__list-item a {
   display: flex;
   padding: 103px;
 }
 .main__sale .sale__list .sale__list-item span {
   color: #F16D7F;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28,8px;
 }
-.main__sale .sale__list .sale__list-item h1 {
+.main__sale .sale__list .sale__list-item h2 {
   color: #FFFFFF;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+}
+.main__sale .sale__list .sale__list-item4 {
+  width: 100%;
+  height: 180px;
+  margin-top: 30px;
+  background-image: url(../img/LUXIROUS.jpg);
+}
+.main__sale .sale__list .sale__list-item4 a {
+  padding-top: 68px;
+}
+.main__sale .sale__list .sale__list-item1 {
+  background-image: url(../img/stock-women.jpg);
+}
+.main__sale .sale__list .sale__list-item2 {
+  background-image: url(../img/stock-men.jpg);
+}
+.main__sale .sale__list .sale__list-item3 {
+  background-image: url(../img/stock-kids.jpg);
 }
 .fetured {
   width: 1600px;
@@ -149,7 +154,7 @@ body {
   text-align: center;
 }
 .fetured h2 {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -158,7 +163,7 @@ body {
   padding-top: 67px;
 }
 .fetured span {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -170,7 +175,7 @@ body {
   margin: 0 auto;
   height: 1431px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .fetured__item {
@@ -182,7 +187,7 @@ body {
   background-color: #F1E4E6;
 }
 .fetured__item .fetured-item__title {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -191,7 +196,7 @@ body {
   padding: 12px;
 }
 .fetured__item .fetured-item__text {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -200,7 +205,7 @@ body {
   padding: 12px;
 }
 .fetured__item .fetured-item__price {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -240,15 +245,14 @@ body {
 .feature .feature__box {
   display: flex;
   align-items: center;
-  padding-top: 102px;
-  padding-bottom: 102px;
+  width: 33%;
 }
 .feature .feture-box__item-1 {
-  padding-left: 170px;
+  padding-left: 44%;
 }
 .feature .feture-box__item-2 {
   text-align: center;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 19.96px;
@@ -257,7 +261,7 @@ body {
   padding-top: 20px;
 }
 .feature .feture-box__item-3 {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 13.972px;
@@ -281,7 +285,7 @@ body {
   flex-direction: column;
 }
 .subscribe .subscribe__box p {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -334,8 +338,8 @@ body {
   justify-content: space-around;
   background-color: #222222;
 }
-.footer__copyright .copyright p {
-  font-family: Lato;
+.footer__copyright .copyright .copyright__text {
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -444,7 +448,7 @@ body {
   padding: 15px 0 15px 0 ;
 }
 .filter__item {
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -466,7 +470,7 @@ body {
   padding-left: 15px;
 }
 .pagination__link {
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -507,7 +511,7 @@ body {
 }
 .registration__form-group .registration__label,
 .registration__form-group-2 .registration__label {
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -527,7 +531,7 @@ body {
   background-color: #F16D7F;
 }
 .registration__form-group-2 .form-group-2__reminder {
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 13px;
   font-style: normal;
   font-weight: 300;
@@ -537,7 +541,7 @@ body {
 }
 .registration__loyalty {
   width: 46%;
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -556,11 +560,124 @@ body {
   padding-top: 16px;
 }
 .form-check__label {
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 11px;
   font-style: normal;
   font-weight: 300;
   line-height: 13px;
   letter-spacing: 0em;
   text-align: left;
+}
+@media (max-width: 1599px) {
+  .header {
+    width: 100%;
+  }
+  .main__sale .sale__list {
+    padding: 0;
+  }
+  .main__head .main__img {
+    width: 50%;
+    height: auto;
+  }
+  .header .header__container {
+    width: 91.5%;
+  }
+  .main__head {
+    width: 100%;
+  }
+  .main__head .main__header-span {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .main__head .main__header {
+    font-size: 44px;
+    line-height: 52px;
+  }
+  .fetured {
+    width: 100%;
+  }
+  .fetured__items {
+    width: 100%;
+    height: 100%;
+  }
+  .browse {
+    width: 100%;
+  }
+  .feature {
+    width: 100%;
+    padding: 0;
+  }
+  .subscribe {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer__copyright {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1599px) {
+  .main__sale {
+    width: 100%;
+    padding: 19px 0 155px;
+    flex-wrap: wrap;
+  }
+  .main__content {
+    padding: 148px 0 0 64px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1599px) {
+  .main__sale .sale__list .sale__list-item:not(:last-child) {
+    width: 33%;
+    margin: 0 0 19px;
+  }
+}
+@media (max-width: 768px) {
+  .main__content {
+    padding: 148px 0 148px 64px;
+  }
+  .main__sale {
+    width: 100%;
+    height: 100%;
+    padding: 19px 0 155px;
+    flex-wrap: wrap;
+  }
+  .feature {
+    height: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 68px;
+  }
+  .feature .feature__box {
+    justify-content: center;
+    width: 100%;
+    margin-top: 48px;
+  }
+  .subscribe .subscribe__box {
+    width: 100%;
+  }
+  .subscribe .subscribe__form-group .form-group__title,
+  .subscribe .subscribe__form-group .form-inline {
+    padding: 10px;
+  }
+  .footer__copyright {
+    flex-wrap: wrap-reverse;
+  }
+  .footer__copyright .copyright {
+    width: 100%;
+  }
+  .footer__copyright .footer__copyright-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__copyright .copyright__text {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .main__img {
+    display: none;
+  }
 }
