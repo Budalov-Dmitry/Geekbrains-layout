@@ -6,6 +6,7 @@
 }
 button {
     border: none;
+    transition: background 3s, border-radius 3s, width 3s;
 }
 a { 
     text-decoration: none; 
@@ -25,10 +26,9 @@ body {
     padding: 0;
     overflow: hidden;
     border: 0;
-    clip: rect(0 0 0 0)
-
+    clip: rect(0 0 0 0);
 }
-.padding{
+.padding {
     padding-left: 230px;
     padding-right: 230px;
 }
@@ -48,7 +48,7 @@ body {
     justify-content: space-between;
     
 }
-.header__logo-container{
+.header__logo-container {
     display: flex;
     justify-content: space-between;
 }
@@ -68,53 +68,57 @@ body {
     background: #F1E4E6;
 
 }
-.main__head:hover{
+.main__head:hover {
     -webkit-filter: brightness(50%);
     filter: brightness(0.5);
 }
-
-.fetured-item__img:hover{
+.fetured-item__img:hover .fetured-item__button{
     /*-webkit-filter: brightness(50%);*/
-    filter: brightness(0.4);
+    display: block;
+    color: white;
 }
-.main__content{
+.main__content {
     width: 100%;
     padding: 335px 0 0 64px;
 }
-.main__header{
+.main__header {
     position: relative;
+    text-transform: uppercase;
     padding: 0 0 0 28px;
-    ::before{
+    ::before {
         position: absolute;
         content: '';
         width: 12px;
-        height: 100%;
+        height: 50%;
         background-color: #F16D7F;
         left: -12px;
     }
+    .main__header-span {
+        color: #F16D7F;
+    }
 }
 
-.main__sale{
+.main__sale {
     .margin;
     height:631px;
-    .sale__list{
+    .sale__list {
         padding-top: 64px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         
-        .sale__list-item:not(:last-child){
+        .sale__list-item:not(:last-child) {
             width: 360px;
             height: 260px;
         }
         .sale__list-item  {
             display: flex;
             justify-content: center;
-            a{
+            a {
                 display: flex;
                 padding: 103px;
             }
-            span{
+            span {
                 color: #F16D7F;
                 font-family: 'Lato';
                 font-style: normal;
@@ -122,7 +126,7 @@ body {
                 font-size: 24px;
                 line-height: 28,8px;
             }
-            h2{
+            h2 {
                 color: #FFFFFF;
                 font-family: 'Lato';
                 font-style: normal;
@@ -133,7 +137,7 @@ body {
             }
         }
         .sale__list-item4 {
-            a{
+            a {
                 padding-top: 68px;
             }
             width: 100%;
@@ -153,11 +157,11 @@ body {
         }
     }
 }
-.fetured{
+.fetured {
     .margin;
     height: 204px;
     text-align: center;
-    h2{
+    h2 {
         font-family: 'Lato';
         font-style: normal;
         font-weight: normal;
@@ -166,7 +170,7 @@ body {
         color: #222222;
         padding-top: 67px;
     }
-    span{
+    span {
         font-family: 'Lato';
         font-style: normal;
         font-weight: normal;
@@ -175,7 +179,7 @@ body {
         color: #9F9F9F;
     }
 }
-.fetured__items{
+.fetured__items {
     width: (@width-all)-230-230;
     margin: 0 auto;
     height: 1431px;
@@ -184,11 +188,13 @@ body {
     flex-wrap: wrap;
 }
 .fetured__item {
-    height: 581px;
+    height: 585px;
     width: 360px;
+    overflow: hidden;
     background-color: #F8F8F8;
-    a{
-        background-color: #F1E4E6
+    a {
+        background-color: #F1E4E6;
+        position: relative;
     }
     .fetured-item__title {
     font-family: 'Lato';
@@ -199,7 +205,7 @@ body {
     color: #000000;
     padding: 12px;
     }
-    .fetured-item__text{
+    .fetured-item__text {
         font-family: 'Lato';
         font-style: normal;
         font-weight: 300;
@@ -209,7 +215,7 @@ body {
         padding: 12px;
 
     }
-    .fetured-item__price{
+    .fetured-item__price {
         font-family: 'Lato';
         font-style: normal;
         font-weight: normal;
@@ -217,6 +223,14 @@ body {
         line-height: 19px;
         color: #F16D7F;
         padding: 12px;
+    }
+    .fetured-item__button {
+        display: none;
+        position: absolute;
+        width: 138px;
+        height: 43px;
+        left: 140px;
+        bottom: 200px;
     }
 }
 .browse {
@@ -235,11 +249,12 @@ body {
 .browse__button:hover {
     background-color: #F16D7F;
     color: white;
+    border-radius: 30px;
 }
 .button__text:hover {
     color: white;
 }
-.feature{
+.feature {
     width: (@width-all)-230-230;
     margin: 0 auto;
     height: 341px;
@@ -265,7 +280,7 @@ body {
         color: #FBFBFB;
         padding-top: 20px;
     }
-    .feture-box__item-3{
+    .feture-box__item-3 {
         font-family: 'Lato';
         font-style: normal;
         font-weight: 300;
@@ -275,7 +290,7 @@ body {
         color: #FBFBFB;
     }
 }
-.subscribe{
+.subscribe {
     width: (@width-all)-230-230;
     margin: 0 auto;
     height: 448px;
@@ -283,12 +298,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .subscribe__box{
+    .subscribe__box {
         width: @width-all/3;
         display: flex;
         align-items: center;
         flex-direction: column;
-        p{
+        p {
             font-family: 'Lato';
             font-style: normal;
             font-weight: normal;
@@ -327,7 +342,11 @@ body {
             color: white;
             background-color: #F16D7F;;
         }
-        .form-control{
+        .btn:hover {
+            background-color: black;
+            width: 120px;
+        }
+        .form-control {
             border-radius: 40px 0px 0px 40px;
             height: 49px;
             width: 250px;
@@ -335,7 +354,10 @@ body {
         }
     }
 }
-.footer__copyright{
+.bootpadd {
+    width: 1600px;
+}
+.footer__copyright {
     .margin;
     height: 75px;
     display: flex;
@@ -351,12 +373,12 @@ body {
         color: #FBFBFB;
     }
 }
-.footer__copyright-list ul{
+.footer__copyright-list ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-/* страница ккаталога*/
+/* страница каталога*/
 .catalog__items {
     height: 2056px;
 }
@@ -368,10 +390,10 @@ body {
     justify-content: space-around;
     background-color: #F8F3F4;
 }
-.catalog-head__nav{
+.catalog-head__nav {
     display: flex;
 }
-.catalog__title{
+.catalog__title {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -379,7 +401,7 @@ body {
     line-height: 29px;
     color: #F16D7F;
 }
-.catalog-head__nav{
+.catalog-head__nav {
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
@@ -387,25 +409,25 @@ body {
     line-height: 17px;
     color: #636363;
 }
-.nav-list__active{
+.nav-list__active {
     color: #F16D7F;
     font-weight: bold;
 }
-.filter{
+.filter {
     .margin;
     height: 120px;
     display: flex;
     justify-content: space-around;
 }
-.filter__search{
+.filter__search {
     width: 150px;
     
 }
-.filter__list{
+.filter__list {
     position: relative;
     
 }
-.filter__title::before{
+.filter__title::before {
     position: absolute;
     content: '';
     width: 5px;
@@ -413,15 +435,15 @@ body {
     background-color: #F16D7F;
     left: -11px;
 }    
-.conditions__list{
+.conditions__list {
     display: flex;
     justify-content: space-between;
     
 }
-.filter__container,.filter__conditions{
+.filter__container,.filter__conditions {
     padding-top: 50px;
 }
-.conditions__form{
+.conditions__form {
     padding-left: 28px;
     font-family: Lato;
     font-size: 14px;
@@ -431,7 +453,7 @@ body {
     letter-spacing: 0em;
     text-align: left;
 }
-.filter__head{
+.filter__head {
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
@@ -441,7 +463,7 @@ body {
     text-align: left;
 
 }
-.filter__title{
+.filter__title {
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
@@ -454,7 +476,7 @@ body {
     padding: 15px 0 15px 0 ;
  
 }
-.filter__item{
+.filter__item {
     font-family: 'Lato';
     font-size: 14px;
     font-style: normal;
@@ -463,19 +485,19 @@ body {
     letter-spacing: 0em;
     text-align: left;
 }
-.catalog__pagination{
+.catalog__pagination {
     .margin;
     height: 96px;
     display: flex;
 }
-.pagination__list{
+.pagination__list {
     display: flex;
     margin: auto;
 }
-.pagination__item{
+.pagination__item {
     padding-left: 15px;
 }
-.pagination__link{
+.pagination__link {
     font-family: 'Lato';
     font-size: 16px;
     font-style: normal;
@@ -485,7 +507,7 @@ body {
     text-align: left;
     color: grey;
 }
-.pagination__link-active{
+.pagination__link-active {
     color: #EF5B70;
 }
 .form__check {
@@ -535,6 +557,10 @@ body {
     height: 50px;
     color: white;
     background-color:  #F16D7F;
+    }
+    .btn:hover {
+        background-color: black;
+        width: 120px;
     }
     .form-group-2__reminder {
         font-family: 'Lato';
@@ -630,7 +656,7 @@ body {
             color: #5D5D5D;
             padding: 12px;
         }
-        .collection__price{
+        .collection__price {
             display: flex;
             justify-content: center;
             font-family: 'Lato';

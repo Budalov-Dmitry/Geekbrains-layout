@@ -4,6 +4,7 @@
 }
 button {
   border: none;
+  transition: background 3s, border-radius 3s, width 3s;
 }
 a {
   text-decoration: none;
@@ -69,9 +70,10 @@ body {
   -webkit-filter: brightness(50%);
   filter: brightness(0.5);
 }
-.fetured-item__img:hover {
+.fetured-item__img:hover .fetured-item__button {
   /*-webkit-filter: brightness(50%);*/
-  filter: brightness(0.4);
+  display: block;
+  color: white;
 }
 .main__content {
   width: 100%;
@@ -79,15 +81,19 @@ body {
 }
 .main__header {
   position: relative;
+  text-transform: uppercase;
   padding: 0 0 0 28px;
 }
 .main__header ::before {
   position: absolute;
   content: '';
   width: 12px;
-  height: 100%;
+  height: 50%;
   background-color: #F16D7F;
   left: -12px;
+}
+.main__header .main__header-span {
+  color: #F16D7F;
 }
 .main__sale {
   width: 1600px;
@@ -179,12 +185,14 @@ body {
   flex-wrap: wrap;
 }
 .fetured__item {
-  height: 581px;
+  height: 585px;
   width: 360px;
+  overflow: hidden;
   background-color: #F8F8F8;
 }
 .fetured__item a {
   background-color: #F1E4E6;
+  position: relative;
 }
 .fetured__item .fetured-item__title {
   font-family: 'Lato';
@@ -213,6 +221,14 @@ body {
   color: #F16D7F;
   padding: 12px;
 }
+.fetured__item .fetured-item__button {
+  display: none;
+  position: absolute;
+  width: 138px;
+  height: 43px;
+  left: 140px;
+  bottom: 200px;
+}
 .browse {
   width: 1600px;
   margin: 0 auto;
@@ -230,6 +246,7 @@ body {
 .browse__button:hover {
   background-color: #F16D7F;
   color: white;
+  border-radius: 30px;
 }
 .button__text:hover {
   color: white;
@@ -323,11 +340,18 @@ body {
   color: white;
   background-color: #F16D7F;
 }
+.subscribe .subscribe__form-group .btn:hover {
+  background-color: black;
+  width: 120px;
+}
 .subscribe .subscribe__form-group .form-control {
   border-radius: 40px 0px 0px 40px;
   height: 49px;
   width: 250px;
   border: 0;
+}
+.bootpadd {
+  width: 1600px;
 }
 .footer__copyright {
   width: 1600px;
@@ -351,7 +375,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-/* страница ккаталога*/
+/* страница каталога*/
 .catalog__items {
   height: 2056px;
 }
@@ -529,6 +553,10 @@ body {
   height: 50px;
   color: white;
   background-color: #F16D7F;
+}
+.registration__form-group-2 .btn:hover {
+  background-color: black;
+  width: 120px;
 }
 .registration__form-group-2 .form-group-2__reminder {
   font-family: 'Lato';
