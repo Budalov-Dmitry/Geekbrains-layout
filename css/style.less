@@ -529,6 +529,7 @@ body {
     margin-top: 64px;
     margin-bottom: 112px;
     display: flex;
+    justify-content: space-between;
 }
 .registration__form {
     width: 25%;
@@ -617,7 +618,6 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -112px;
     .collection__header {
         display: flex;
         justify-content: center;
@@ -711,10 +711,16 @@ body {
         width: 91.5%;
     }
     
-    .main__head  {
+    .main__head, .registration__head, .registration {
         width: 100%;
     }
-
+    .registration__loyalty {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
     .main__head .main__header-span {
       font-size: 24px;
       line-height: 29px;
@@ -752,6 +758,13 @@ body {
     .footer__copyright {
         width: 100%;
     }
+    .catalog__head, .carousel, .collection,
+     .cart__adding, .cart__button {
+        width: 100%;
+    }
+    .cart__dropdown {
+        flex-direction: column;
+    }
 }
 @media (min-width: 768px) and (max-width: 1599px) {
     
@@ -762,6 +775,9 @@ body {
     }
     .main__content {
         padding: 148px 0 0 64px;
+    }
+    .registration__form {
+        padding: 0 15px 0 15px;
     }
 }
   
@@ -774,6 +790,12 @@ body {
 @media (max-width: 768px) {
     .main__content {
         padding: 148px 0 148px 64px;
+    }
+    .registration {
+        flex-wrap: wrap;
+    }
+    .registration__form {
+        padding: 0 15px 0 15px;
     }
     .main__sale {
         width: 100%;
@@ -816,5 +838,17 @@ body {
 @media (max-width: 767px) {
     .main__img {
         display: none;
+    }
+    .registration {
+        flex-direction: column;
+    }
+    .registration__form {
+        padding: 0;
+    }
+    .registration__title {
+        padding-left: 100px;
+    }
+    .registration__loyalty {
+        width: 100%;
     }
 }
